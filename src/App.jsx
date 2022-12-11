@@ -1,5 +1,6 @@
-import { Text } from './components/atoms'
-import { Body } from './components/layout'
+import { Text } from './components/atoms';
+import { Body } from './components/layout';
+import Grid from './styles/Grid';
 
 function App() {
   return (
@@ -11,8 +12,29 @@ function App() {
         <Text as="li">B</Text>
         <Text as="li">C</Text>
       </ul>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between ',
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+        }}
+      >
+        <Grid>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+          <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
+        </Grid>
+        <div style={{ backgroundColor: 'red', padding: '20rem' }}></div>
+      </div>
     </Body>
-  )
+  );
 }
 
-export default App
+export default App;

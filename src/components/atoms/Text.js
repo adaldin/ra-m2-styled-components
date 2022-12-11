@@ -1,9 +1,9 @@
-import styled from 'styled-components'
-import { colors, dimensions } from '../../styles'
+import styled from 'styled-components';
+import { colors, fonts } from '../../styles';
 
 const Text = styled.p`
   color: ${({ color }) => color || colors.font.base};
-  font-size: ${({ fontSize }) => fontSize || dimensions.font.base};
-`
+  font-size: ${({ fontSize }) => fontSize || fonts.size.base};
+`;
 
-export default Text
+export default Text;

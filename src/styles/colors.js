@@ -1,8 +1,14 @@
 export const colors = {
-  main: '#FF0000',
-  secondary: '#0088CC',
+  main: '#996699',
+  lightBlue1: '#e4efee',
+  lightBlue2: '#d4dedd',
+  blue: '#6699cc',
+  green: '#33cc66',
+  red: '#cc0000',
+  lightGrey: '#666666',
   font: {
-    base: '#444',
-    headings: '#121212',
+    base: '#666666',
+    headings: '#993333',
+    white: '#ffffff',
   },
-}
+};
