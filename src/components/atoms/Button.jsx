@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { colors, fonts } from '../../styles/index';
-// import Icon from './Icon';
+import { colors, fonts, setIcons } from '../../styles/index';
 import Text from './Text';
+import Icon from './Icon';
 
 const StyledButton = styled.button`
   display: flex;
@@ -40,7 +40,6 @@ const StyledButton = styled.button`
     cursor: not-allowed;
     opacity: 0.57;
   }
-
 `;
 
 function Button({
@@ -72,29 +71,7 @@ function Button({
       textColor={textColor}
       {...props}
     >
-      {iconPosition === 'left' &&
-        (!isLoading && icon ? (
-          <Icon
-            color={textColor}
-            name={icon}
-            mr="0.5rem"
-            style={{ ...iconStyles }}
-          />
-        ) : null)}
-      <Text
-        as="span"
-        text={isLoading ? loadingText : text}
-        style={{ ...textStyles }}
-      />
-      {iconPosition === 'right' &&
-        (!isLoading && icon ? (
-          <Icon
-            color={textColor}
-            name={icon}
-            ml="0.5rem"
-            style={{ ...iconStyles }}
-          />
-        ) : null)}
+      <Icon color={colors.font.white} name={setIcons.search} />
     </StyledButton>
   );
 }
