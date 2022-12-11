@@ -31,7 +31,7 @@ function App() {
           <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
           <div style={{ backgroundColor: 'blue', padding: '5rem' }}></div>
         </Grid>
-        <div style={{ backgroundColor: 'red', padding: '20rem' }}></div>
+        <div style={{ backgroundColor: 'red', padding: '10rem' }}></div>
       </div>
     </Body>
   );

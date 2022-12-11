@@ -6,6 +6,7 @@ export const colors = {
   green: '#33cc66',
   red: '#cc0000',
   lightGrey: '#666666',
+  transparent: 'rgba(0, 0, 0, 0)',
   font: {
     base: '#666666',
     headings: '#993333',
