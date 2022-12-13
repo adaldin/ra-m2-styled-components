@@ -1,32 +1,15 @@
+import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { colors } from '../../styles/index';
 
-const IconStyled = styled.span`
-  color: ${(props) => props.color};
-  font-size: ${(props) => props.size}px;
-`;
-const SvgStyled = styled.svg`
-  fill: white;
+const StyledIcon = styled.div`
+  width: 24px;
+  height: 24px;
+  svg {
+    fill: ${({ fill }) => fill || 'red'}};
+  }
 `;
 
-function Icon({ size = 16, fill = colors.font.white, name }) {
-  return (
-    <IconStyled>
-      <SvgStyled fill={fill} width={size} height={size} name={name} />
-    </IconStyled>
-  );
+function Icon({ fill }) {
+  return <StyledIcon fill={fill}></StyledIcon>;
 }
-
-Icon.propTypes = {
-  name: PropTypes.string.isRequired,
-  size: PropTypes.number,
-  color: PropTypes.string,
-  fill: PropTypes.number,
-  wght: PropTypes.number,
-  grad: PropTypes.number,
-  opsz: PropTypes.number,
-  className: PropTypes.string,
-};
-
-export default styled(Icon)``;
+export default Icon;
