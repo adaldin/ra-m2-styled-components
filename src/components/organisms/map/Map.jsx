@@ -4,8 +4,12 @@ import { colors, FlexBox } from '../../../styles';
 function Map() {
   const StyledMap = styled(FlexBox)`
     background-color: ${colors.lightGrey};
-    width: 40%;
     border-radius: 0.4rem;
+    width: 100%;
+
+    @media (min-width: 600px) {
+      width: 40%;
+    }
   `;
 
   return (

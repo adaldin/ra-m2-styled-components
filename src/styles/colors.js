@@ -1,7 +1,9 @@
 export const colors = {
   main: '#996699',
+  lightBlue: '#46C1F7',
   lightBlue1: '#e4efee',
   lightBlue2: '#d4dedd',
+  darkBlue: '#0073E6',
   blue: '#6699cc',
   green: '#33cc66',
   red: '#cc0000',

@@ -24,7 +24,7 @@ function Header() {
       padding="0rem 1rem"
     >
       <Link to="/">
-        <Title text="MIPISO.com.es" headingSize={6}></Title>
+        <Title text="MIPISO.com.es" headingSize={1}></Title>
       </Link>
       <Menu />
     </HeaderStyled>

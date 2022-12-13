@@ -21,7 +21,7 @@ function SearcherBar() {
         onChange={handleChange}
         label="Madrid, Barcelona, Zaragoza"
       />
-      <Button text="Busca"></Button>
+      <Button text="BO" className="blue-gradient"></Button>
     </FlexBox>
   );
 }
