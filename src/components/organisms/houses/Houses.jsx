@@ -4,11 +4,14 @@ import { Button, Card } from '../../atoms';
 
 function Houses() {
   const HousesStyled = styled(FlexBox)`
-    width: 60%;
-    padding-top: 1rem;
+    width: 100%;
+
+    @media (min-width: 600px) {
+      width: 60%;
+    }
   `;
   return (
-    <HousesStyled gap="1rem" padding>
+    <HousesStyled gap="1rem">
       <Grid>
         <Card />
         <Card />

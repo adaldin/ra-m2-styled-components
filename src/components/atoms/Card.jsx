@@ -8,10 +8,9 @@ const CardStyled = styled(FlexBox)`
   background: white;
   box-shadow: 0px 3px 6px #00000029;
   border: 1px solid ${colors.lightGrey};
-  border-radius: 0.8rem;
-  padding: 0.5rem;
+  border-radius: 0.4rem;
   width: 200px;
-  height: 200px;
+  height: 215px;
 `;
 
 function Card({ children, className = '' }) {

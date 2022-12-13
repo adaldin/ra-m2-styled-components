@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FlexBox } from '../../../styles';
 import { Title } from '../../atoms/index';
@@ -6,17 +7,25 @@ import Menu from './Menu';
 
 const HeaderStyled = styled(FlexBox)`
   width: 100%;
+  a:link {
+    text-decoration: none;
+  }
+  a:focused {
+    text-decoration: none;
+  }
 `;
 
 function Header() {
   return (
     <HeaderStyled
-      padding
       justify="space-between"
       align="baseline"
       direction="row"
+      padding="0rem 1rem"
     >
-      <Title text="MIPISO.com.es" headingSize={6}></Title>
+      <Link to="/">
+        <Title text="MIPISO.com.es" headingSize={6}></Title>
+      </Link>
       <Menu />
     </HeaderStyled>
   );

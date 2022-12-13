@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { colors, dimensions } from '../../../styles';
 import FlexBox from '../../../styles/FlexBox';
@@ -6,8 +7,8 @@ import FlexBox from '../../../styles/FlexBox';
 const MenuStyled = styled(FlexBox)`
   list-style-type: none;
   gap: 1rem;
-  color: ${colors.font.base};
   li {
+    color: ${colors.font.base};
     &:hover {
       color: ${({ hoverColor }) => (hoverColor ? hoverColor : '')};
     }
@@ -17,9 +18,15 @@ const MenuStyled = styled(FlexBox)`
 function Menu() {
   return (
     <MenuStyled as="ul" direction="row" justify="end" hoverColor={colors.main}>
-      <li>Buscador</li>
-      <li>Datos</li>
-      <li>Mi Perfil</li>
+      <Link to="/">
+        <li>Buscador</li>
+      </Link>
+      <Link to="/">
+        <li>Datos</li>
+      </Link>
+      <Link to="/">
+        <li>Mi Perfil</li>
+      </Link>
     </MenuStyled>
   );
 }
