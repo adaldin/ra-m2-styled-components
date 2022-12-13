@@ -36,14 +36,10 @@ function Button({
   text,
   textColor = 'white',
   disabled,
-  icon,
-  iconPosition,
   className,
   buttonStyles,
-  textStyles,
-  iconStyles,
-  animated,
   onClick,
+  children,
 }) {
   return (
     <StyledButton
@@ -54,8 +50,7 @@ function Button({
       onClick={onClick}
       textColor={textColor}
     >
-      {/* <Icon fill={colors.font.white}></Icon> */}
-      <Text as="span">{text}</Text>
+      {children ? <Icon>{children}</Icon> : <Text as="span">{text}</Text>}
     </StyledButton>
   );
 }
@@ -64,15 +59,8 @@ Button.propTypes = {
   type: PropTypes.string,
   text: PropTypes.string,
   textColor: PropTypes.string,
-  loadingText: PropTypes.string,
-  isLoading: PropTypes.bool,
-  iconPosition: PropTypes.string,
   className: PropTypes.string,
-  icon: PropTypes.string,
   buttonStyles: PropTypes.object,
-  textStyles: PropTypes.object,
-  iconStyles: PropTypes.object,
-  animated: PropTypes.bool,
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
 };
