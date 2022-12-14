@@ -1,4 +1,4 @@
-import { Home, Data, Profile } from '../components/pages';
+import { Home, Data, Profile } from '../pages/index';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 export const DashboardRoutes = () => {

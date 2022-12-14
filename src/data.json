@@ -5,7 +5,7 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "casa con piscina",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
 
     {
@@ -13,7 +13,7 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso con cama doble",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
 
     {
@@ -21,7 +21,7 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso con mucho verde",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
 
     {
@@ -29,7 +29,7 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso con despacho",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
 
     {
@@ -37,7 +37,7 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso cocina abierta",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
 
     {
@@ -45,7 +45,7 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso moderno",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
 
     {
@@ -53,21 +53,21 @@
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso con Amaca",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
     {
       "key": 8,
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso moderno",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     },
     {
       "key": 9,
       "url": "/casaPiscinaAd2.jpg",
       "alt": "piso con Amaca",
       "price": "939.000€",
-      "description": "Piso en Barcelona, Gracia"
+      "description": "Piso en Barcelona, Gracia..."
     }
   ]
 }

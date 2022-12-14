@@ -2,71 +2,43 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { colors, dimensions, FlexBox, fonts } from '../../../styles/index';
-import { Text, Title, Card, Button } from '../../atoms/index';
-import BackCardHouse from '../backCardHouses/BackCardHouse';
+import { Text, Title, Card } from '../../atoms/index';
 
-const Img = styled(BackCardHouse)`
+const CoverImg = styled.img`
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
 `;
 const CardBody = styled(FlexBox)`
   padding: 0.5rem;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   ${Text} {
-    opacity: 0.8;
+    font-size: ${dimensions.base};
+    font-weight: ${fonts.weight.bold};
+    color: ${colors.font.white};
   }
 `;
 
-function FrontCardHouse({
-  image,
-  text,
-  name,
-  ad,
-  containerClassName,
-  titleClassName,
-}) {
+function FrontCardHouse({ image, text, name }) {
   return (
-    <Card
-      ad={ad}
-      containerClassName={containerClassName}
-      titleClassName={titleClassName}
-    >
-      <Img src={image} alt={name} />
+    <Card>
+      <CoverImg src={image} alt={name} />
       <CardBody>
-        <Title
-          headdingSize={6}
-          fontSize={`${dimensions.sm}`}
-          color={`${colors.font.base}`}
-          text={name}
-        >
-          {text}
-        </Title>
-        <FlexBox direction="row" justify="space-between" align="center">
-          <Text color="black" fontWeight="bold" fontSize={dimensions.sm}>
-            {text}
-          </Text>
-          <Button
-            text="Localizar"
-            fontSize={dimensions.sm}
-            buttonStyles={{
-              backgroundColor: `${colors.main}`,
-              width: '50%',
-              height: '50%',
-            }}
-          ></Button>
-        </FlexBox>
+        <Title text={name} headingSize={1} />
+        <Text>{text}</Text>
       </CardBody>
     </Card>
   );
 }
 FrontCardHouse.propTypes = {
-  containerClassName: PropTypes.string,
-  titleClassName: PropTypes.string,
-  ad: PropTypes.object,
-  image: PropTypes.object,
-  description: PropTypes.string.isRequired,
-  fontSize: PropTypes.string,
-  color: PropTypes.string,
+  image: PropTypes.string,
   text: PropTypes.string.isRequired,
   name: PropTypes.string,
 };

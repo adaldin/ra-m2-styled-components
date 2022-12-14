@@ -37,18 +37,7 @@ function Houses() {
           );
         })}
       </Grid>
-      {/* <BackCardHouse image={HouseImg} text={'Piso en Barcelona, Gracia'} /> */}
-      {/* <Grid>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </Grid> */}
+
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <Button text="Cargar más"></Button>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors, FlexBox } from '../../styles';
+import { FlexBox } from '../../styles';
 
 const StyledIcon = styled(FlexBox)`
   width: 20px;
@@ -9,13 +9,6 @@ const StyledIcon = styled(FlexBox)`
     fill: ${({ fill }) => fill || 'white'}};
   }
 `;
-
-// const StyledIcon = styled.svg`
-//   width: 24px;
-//   height: 24px;
-// fill: ${({ fill }) => fill || colors.font.white}};
-
-// `;
 
 function Icon({ fill, children }) {
   return (

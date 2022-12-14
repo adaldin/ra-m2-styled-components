@@ -7,9 +7,7 @@ const InputTextStyled = styled.input`
   border: 1px solid ${colors.lightBlue2};
   font-size: 14px;
   padding: 0.3rem;
-  box-shadow: -12px 10px 27px -12px rgba(0, 0, 0, 0.64);
-  -webkit-box-shadow: -12px 10px 27px -12px rgba(0, 0, 0, 0.64);
-  -moz-box-shadow: -12px 10px 27px -12px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 3px 6px #00000029;
 
   &:hover {
     border: 1px solid ${colors.main};

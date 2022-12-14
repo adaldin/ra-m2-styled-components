@@ -1,4 +1,4 @@
-import { Body } from '../layout';
+import { Body } from '../components/layout/index';
 
 function Data() {
   return (

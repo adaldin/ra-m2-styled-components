@@ -1,41 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { colors, dimensions, FlexBox, fonts } from '../../../styles/index';
+import { colors, dimensions, FlexBox } from '../../../styles/index';
 import { Text, Title, Card, Button } from '../../atoms/index';
 
-const Img = styled.img`
+const CoverImg = styled.img`
   width: 100%;
   height: 60%;
   object-fit: cover;
   border-radius: 6px;
 `;
 const CardBody = styled(FlexBox)`
-  padding: 0.5rem;
-
+  padding: 0.3rem;
   ${Text} {
     opacity: 0.8;
   }
 `;
 
-function BackCardHouse({
-  image,
-  text,
-  name,
-  ad,
-  containerClassName,
-  titleClassName,
-}) {
+function BackCardHouse({ image, text, name }) {
   return (
-    <Card
-      ad={ad}
-      containerClassName={containerClassName}
-      titleClassName={titleClassName}
-    >
-      <Img src={image} alt={name} />
+    <Card>
+      <CoverImg src={image} alt={name} />
       <CardBody>
         <Title
-          headdingSize={6}
+          headingSize={1}
           fontSize={`${dimensions.sm}`}
           color={`${colors.font.base}`}
           text={name}
@@ -61,13 +49,7 @@ function BackCardHouse({
   );
 }
 BackCardHouse.propTypes = {
-  containerClassName: PropTypes.string,
-  titleClassName: PropTypes.string,
-  ad: PropTypes.object,
-  image: PropTypes.object,
-  description: PropTypes.string.isRequired,
-  fontSize: PropTypes.string,
-  color: PropTypes.string,
+  image: PropTypes.string,
   text: PropTypes.string.isRequired,
   name: PropTypes.string,
 };

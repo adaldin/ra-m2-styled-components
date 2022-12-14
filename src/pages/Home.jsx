@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { FlexBox } from '../../styles';
-import { Body } from '../layout';
-import Houses from '../organisms/houses/Houses';
-import Map from '../organisms/map/Map';
+import { FlexBox } from '../styles';
+import { Body } from '../components/layout';
+import { Houses, Map } from '../components/organisms/index';
 
 const HomeStyled = styled(FlexBox)`
   width: 100%;
-  @media (min-width: 600px) {
+
+  @media (min-width: 640px) {
     flex-direction: row;
   }
 `;

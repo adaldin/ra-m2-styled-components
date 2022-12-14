@@ -1,20 +1,35 @@
 import styled from 'styled-components';
 import { colors, FlexBox } from '../../../styles';
+import { BackCardHouse } from '../index';
+import map from '../../../assets/images/map.png';
+import data from '../../../data.json';
+import image from '../../../assets/images/casaPiscinaAd2.jpg';
 
 const StyledMap = styled(FlexBox)`
-  background-color: ${colors.lightGrey};
   border-radius: 0.4rem;
   width: 100%;
-
+  border: 1px solid ${colors.main};
+  background-image: url(${map});
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  margin-top: 1rem;
   @media (min-width: 650px) {
     width: 45%;
+    margin-top: 0rem;
   }
 `;
 
 function Map() {
+  const apartment = data.apartments[0];
   return (
-    <StyledMap align="center" padding>
-      map
+    <StyledMap align="center" justify="center" padding>
+      <BackCardHouse
+        image={image}
+        name={apartment.description}
+        text={apartment.price}
+        key={apartment.key}
+      />
     </StyledMap>
   );
 }
