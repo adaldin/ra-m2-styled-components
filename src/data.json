@@ -1,0 +1,73 @@
+{
+  "apartments": [
+    {
+      "key": 1,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "casa con piscina",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+
+    {
+      "key": 2,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso con cama doble",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+
+    {
+      "key": 3,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso con mucho verde",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+
+    {
+      "key": 4,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso con despacho",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+
+    {
+      "key": 5,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso cocina abierta",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+
+    {
+      "key": 6,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso moderno",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+
+    {
+      "key": 7,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso con Amaca",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+    {
+      "key": 8,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso moderno",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    },
+    {
+      "key": 9,
+      "url": "/casaPiscinaAd2.jpg",
+      "alt": "piso con Amaca",
+      "price": "939.000€",
+      "description": "Piso en Barcelona, Gracia"
+    }
+  ]
+}

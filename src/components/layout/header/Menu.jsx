@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { colors, dimensions } from '../../../styles';
+import { colors } from '../../../styles';
 import FlexBox from '../../../styles/FlexBox';
 
 const MenuStyled = styled(FlexBox)`
@@ -21,10 +21,10 @@ function Menu() {
       <Link to="/">
         <li>Buscador</li>
       </Link>
-      <Link to="/">
+      <Link to="/data">
         <li>Datos</li>
       </Link>
-      <Link to="/">
+      <Link to="/profile">
         <li>Mi Perfil</li>
       </Link>
     </MenuStyled>

@@ -6,7 +6,7 @@ const StyledMap = styled(FlexBox)`
   border-radius: 0.4rem;
   width: 100%;
 
-  @media (min-width: 800px) {
+  @media (min-width: 650px) {
     width: 45%;
   }
 `;
