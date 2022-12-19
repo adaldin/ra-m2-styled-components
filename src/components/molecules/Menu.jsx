@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { colors } from '../../../styles';
-import FlexBox from '../../../styles/FlexBox';
+import React from "react"
+import { Link } from "react-router-dom"
+import styled from "styled-components"
+import { colors } from "../../styles"
+import FlexBox from "../../styles/FlexBox"
 
 const MenuStyled = styled(FlexBox)`
   list-style-type: none;
@@ -10,12 +10,12 @@ const MenuStyled = styled(FlexBox)`
   li {
     color: ${colors.font.base};
     &:hover {
-      color: ${({ hoverColor }) => (hoverColor ? hoverColor : '')};
+      color: ${({ hoverColor }) => (hoverColor ? hoverColor : "")};
     }
   }
-`;
+`
 
-function Menu() {
+export function Menu() {
   return (
     <MenuStyled as="ul" direction="row" justify="end" hoverColor={colors.main}>
       <Link to="/">
@@ -28,7 +28,5 @@ function Menu() {
         <li>Mi Perfil</li>
       </Link>
     </MenuStyled>
-  );
+  )
 }
-
-export default Menu;

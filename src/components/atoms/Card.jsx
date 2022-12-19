@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { FlexBox } from '../../styles/index';
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import { FlexBox } from "../../styles/index"
 
 const CardStyled = styled(FlexBox)`
   background: white;
@@ -10,13 +10,13 @@ const CardStyled = styled(FlexBox)`
   width: 175px;
   height: 200px;
   position: relative;
-`;
+`
 
 function Card({ children }) {
-  return <CardStyled>{children}</CardStyled>;
+  return <CardStyled>{children}</CardStyled>
 }
 Card.propTypes = {
   children: PropTypes.node,
-};
+}
 
-export default styled(Card)``;
+export default styled(Card)``

@@ -1,1 +1,2 @@
-export * from './InputGroupText';
+export * from "./InputGroupText"
+export * from "./Menu"

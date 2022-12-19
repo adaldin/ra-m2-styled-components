@@ -1,10 +1,18 @@
-import { Text } from './components/atoms';
-import { Body } from './components/layout';
-import { DashboardRoutes } from './routes/DashboardRoutes';
-import Grid from './styles/Grid';
+import { Home, Data, Profile } from './pages/index';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
-  return <DashboardRoutes />;
+  return (
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/data" element={<Data />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
 }
 
 export default App;

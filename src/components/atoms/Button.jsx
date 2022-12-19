@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { colors } from '../../styles/index';
-import Icon from './Icon';
-import Text from './Text';
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+import { colors } from "../../styles/index"
+import Icon from "./Icon"
+import Text from "./Text"
 
 const StyledButton = styled.button`
   display: flex;
@@ -26,12 +26,12 @@ const StyledButton = styled.button`
     background: linear-gradient(90deg, ${colors.lightBlue}, ${colors.darkBlue});
   }
   }
-`;
+`
 
 function Button({
-  type = 'submit',
+  type = "submit",
   text,
-  textColor = 'white',
+  textColor = "white",
   className,
   buttonStyles,
   onClick,
@@ -54,7 +54,7 @@ function Button({
         </Text>
       )}
     </StyledButton>
-  );
+  )
 }
 
 Button.propTypes = {
@@ -65,6 +65,6 @@ Button.propTypes = {
   className: PropTypes.string,
   buttonStyles: PropTypes.object,
   onClick: PropTypes.func,
-};
+}
 
-export default styled(Button)``;
+export default styled(Button)``
