@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { FlexBox, Grid } from '../../../styles';
-import { Button } from '../../atoms';
-import BackCardHouse from '../backCardHouses/BackCardHouse';
-import HouseImg from '../../../assets/images/casaPiscinaAd2.jpg';
-import data from '../../../data.json';
-import FrontCardHouse from '../frontCardHouse/FrontCardHouse';
+import styled from "styled-components";
+import { FlexBox, Grid } from "../../../styles";
+import { Button } from "../../atoms";
+import BackCardHouse from "../backCardHouses/BackCardHouse";
+import HouseImg from "../../../assets/images/casaPiscinaAd2.jpg";
+import data from "../../../data.json";
+import FrontCardHouse from "../frontCardHouse/FrontCardHouse";
 
 const HousesStyled = styled(FlexBox)`
   width: 100%;
@@ -14,6 +14,7 @@ const HousesStyled = styled(FlexBox)`
   }
 `;
 
+// Veo filas con 5 elementos en mi pantalla, debería ser 3
 function Houses() {
   const apartments = data.apartments;
   return (
@@ -38,7 +39,7 @@ function Houses() {
         })}
       </Grid>
 
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <Button text="Cargar más"></Button>
       </div>
     </HousesStyled>

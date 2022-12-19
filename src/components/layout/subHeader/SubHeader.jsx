@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import SearcherBar from '../../organisms/searcherBar/SearcherBar';
-import { colors, FlexBox } from '../../../styles/index';
+import React from "react";
+import styled from "styled-components";
+import SearcherBar from "../../organisms/searcherBar/SearcherBar";
+import { colors, FlexBox } from "../../../styles/index";
 
+// Quitarlo de la carpeta subheader
 const SubHeaderStyled = styled(FlexBox)`
   padding: 1rem;
   background-color: ${colors.lightBlue1};

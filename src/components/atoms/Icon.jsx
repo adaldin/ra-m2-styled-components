@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FlexBox } from '../../styles';
+import React from "react";
+import styled from "styled-components";
+import { FlexBox } from "../../styles";
 
 const StyledIcon = styled(FlexBox)`
   width: 20px;
   height: 20px;
   svg {
-    fill: ${({ fill }) => fill || 'white'}};
+    fill: ${({ fill }) => fill || "white"};
   }
 `;
 

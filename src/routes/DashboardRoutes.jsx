@@ -1,6 +1,7 @@
-import { Home, Data, Profile } from '../pages/index';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home, Data, Profile } from "../pages/index";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+// Innecesario, mejor dejarlo en App.jsx
 export const DashboardRoutes = () => {
   return (
     <>
