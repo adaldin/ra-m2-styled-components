@@ -36,7 +36,7 @@ function Button({
   buttonStyles,
   onClick,
   fontSize,
-  children,
+  icon,
 }) {
   return (
     <StyledButton
@@ -46,8 +46,10 @@ function Button({
       onClick={onClick}
       textColor={textColor}
     >
-      {children ? (
-        <Icon>{children}</Icon>
+      {icon ? (
+        <Icon size={24} name="search">
+          {icon}
+        </Icon>
       ) : (
         <Text as="span" fontSize={fontSize}>
           {text}

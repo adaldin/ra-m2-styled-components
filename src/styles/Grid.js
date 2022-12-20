@@ -1,12 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 const Grid = styled.div`
-  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 15px;
-  max-width: 1200px;
-`;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: minmax(100px, auto);
+`
 
-export default Grid;
+export default Grid

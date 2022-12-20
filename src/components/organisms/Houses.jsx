@@ -1,10 +1,9 @@
-import styled from 'styled-components';
-import { FlexBox, Grid } from '../../../styles';
-import { Button } from '../../atoms';
-import BackCardHouse from '../backCardHouses/BackCardHouse';
-import HouseImg from '../../../assets/images/casaPiscinaAd2.jpg';
-import data from '../../../data.json';
-import FrontCardHouse from '../frontCardHouse/FrontCardHouse';
+import styled from "styled-components"
+import { FlexBox, Grid } from "../../styles"
+import { Button } from "../atoms"
+import HouseImg from "../../assets/images/casaPiscinaAd2.jpg"
+import data from "../../data.json"
+import { FrontCardHouse, BackCardHouse } from "./index"
 
 const HousesStyled = styled(FlexBox)`
   width: 100%;
@@ -12,10 +11,10 @@ const HousesStyled = styled(FlexBox)`
   @media (min-width: 640px) {
     width: 55%;
   }
-`;
+`
 
 function Houses() {
-  const apartments = data.apartments;
+  const apartments = data.apartments
   return (
     <HousesStyled gap="1rem">
       <Grid>
@@ -34,15 +33,15 @@ function Houses() {
               text={house.price}
               key={house.key}
             />
-          );
+          )
         })}
       </Grid>
 
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div style={{ display: "flex", justifyContent: "center" }}>
         <Button text="Cargar más"></Button>
       </div>
     </HousesStyled>
-  );
+  )
 }
 
-export default Houses;
+export default Houses
